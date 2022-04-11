@@ -28,8 +28,6 @@ const Home = () => {
     getGroupMeetings(event.target.value);
   };
 
-  console.log(groupMeetings);
-
   return (
     <>
       {devGroups && (

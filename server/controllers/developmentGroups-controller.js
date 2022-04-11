@@ -14,19 +14,6 @@ router.get(`${generalSettings.baseUrl}/developmentGroups`, async (req, res) => {
   }
 });
 
-// router.get(
-//   `${generalSettings.baseUrl}/developmentGroups/:id`,
-//   async (req, res) => {
-//     const id = +req.params.id;
-//       const getResult = await await developmentGroups;
-//     if (!checkResultStatus(getResult)) {
-//       res.status(500).send(getResult);
-//     } else {
-//       res.send(getResult.data);
-//     }
-//   }
-// );
-
 const checkResultStatus = (result) => {
   if (!result.success) {
     return false;
