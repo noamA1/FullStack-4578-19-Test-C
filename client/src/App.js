@@ -2,6 +2,7 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
 import AppBar from "./components/UI/layout/AppBar.js";
 import Home from "./components/pages/Home.js";
+import AddMeeting from "./components/pages/AddMeeting.js";
 
 function App() {
   return (
@@ -11,11 +12,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Navigate replace to='/home' />} />
           <Route path='/home' element={<Home />} />
-          {/* <Route path='/products' element={<Medicines />} />
-          <Route path='/edit-medicine/:id' element={<EditForm />} />
-          <Route path='/companies' element={<Companies />} />
-          <Route path='/company-medicines/:id' element={<CompanyMedicines />} /> */}
-          {/* <Route path='/' element={<Navigate replace to='/welcome' />}/> */}
+          <Route path='/add-meeting' element={<AddMeeting />} />
         </Routes>
       </main>
     </div>
